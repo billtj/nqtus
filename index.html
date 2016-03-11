@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="Nqt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NetQuest, LLC</title>
+  <meta name="description" content="NetQuest, LLC main webpage">
+  <link rel="icon" type="image/jpg" href="img/images.jpg">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="custom.css">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+  <script src="main.js"></script>
+</head>
+
+<!--#########################################################################################################################-->
+
+<body ng-controller="RootController as RC">
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="brand-net">Net</span><span class="brand-quest">Quest</span></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#id_about">About</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            <li><a href="#id_eng">Network/Comm. Engineering</a></li>
+            <li><a href="#id_prog">Software Programming</a></li>
+            <li><a href="#id_web">Web Development</a></li>
+
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Software Products</li>
+            <li><a href="#id_midi">Web MIDI on Chrome</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#id_contact">Contact</a></li>
+        <li><a href="#">(THIS WEBSITE IS STILL UNDER DEVELOPMENT)</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#id_refs">Technical Refs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--#######################################################################################################################-->
+
+  <header id="id_about" class="jumbotron">
+    <div class="container">
+      <h1><span class="brand-net">Net</span><span class="brand-quest">Quest</span></h1>
+      <p><span class="brand-net">Net</span><span class="brand-quest">Quest</span>, LLC is a consulting company that provides services in the areas of network/communications engineering, software programming, and web development. It also creates some software products, such as <a href="http://netquest.us/midi/">Web MIDI on Chrome</a>.</p>
+      <p><a class="btn btn-primary btn-lg" href="#id_srvc" role="button">Learn more &raquo;</a></p>
+    </div>
+  </header>
+
+  <main id="id_srvc" class="panel-group">
+    <div class="container">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1>Services and Products</h1>
+        </div>
+        <div class="panel-body">
+          <section id="id_eng" class="panel panel-info">
+            <div class="panel-heading">
+              <h2>Network&#47;<wbr />Communications Engineering</h2>
+            </div>
+          </section>
+          <section id="id_prog" class="panel panel-info">
+            <div class="panel-heading">
+              <h2>Software Programming</h2>
+            </div>
+          </section>
+          <section id="id_web" class="panel panel-info">
+            <div class="panel-heading">
+              <h2>Web Development</h2>
+            </div>
+          </section>
+          <section id="id_midi" class="panel panel-info">
+            <div class="panel-heading">
+              <h2>Web MIDI on Chrome</h2>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main id="id_contact" class="panel-group">
+    <div class="container">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1>Contact</h1>
+        </div>
+        <div class="panel-body">
+          <address>
+            NetQuest, LLC<br>
+            19425 Caravan Drive<br>
+            Germantown, MD 20874
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--#######################################################################################################################-->
+
+  <div id="id_refs" class="panel-group">
+    <div class="container-fluid">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1>Technical References</h1>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+
+            <!-- Table of contents -->
+            <aside class="col-lg-2 col-lg-push-10">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  Table of Contents
+                </div>
+                <div class="panel-body">
+                  <ul>
+                    <li><a href="#id_net_comm_eng">Network&#47;<wbr />Communications Engineering</a></li>
+                    <li><a href="#id_soft_prog">Software Programming</a></li>
+                    <li><a href="#id_math_tools">Mathematical Tools</a></li>
+                    <li><a href="#id_web_dev">Web Development</a></li>
+                    <ul>
+                      <li><a href="#id_html5">HTML/HTML5</a></li>
+                      <li><a href="#id_bootstrap">Bootstrap</a></li>
+                      <li><a href="#id_javascript">JavaScript</a></li>
+                      <li><a href="#id_typescript">TypeScript</a></li>
+                      <li><a href="#id_editing">Editing</a></li>
+                      <li><a href="#id_chrome_browser">Chrome Browser</a></li>
+                      <li><a href="#id_domain_hosting">Domain and Hosting</a></li>
+                      <li><a href="#id_git_hub">Git/GitHub</a></li>
+                    </ul>
+                    <li><a href="#id_web_midi">Web MIDI on Chrome</a></li>
+                    <li><a href="#id_some_extras">Some Extras</a></li>
+                    <ul>
+                      <li><a href="#id_software_history">Software History</a></li>
+                      <li><a href="#id_android_apps">Android Apps</a></li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+            <!-- The contents -->
+            <main class="col-lg-10 col-lg-pull-2">
+
+              <section id="id_net_comm_eng" class="panel panel-info">
+                <div class="panel-heading">
+                  <h2>Network&#47;<wbr />Communications Engineering</h2>
+                </div>
+              </section>
+
+              <section id="id_soft_prog" class="panel panel-info">
+                <div class="panel-heading">
+                  <h2>Software Programming</h2>
+                </div>
+              </section>
+
+              <section id="id_math_tools" class="panel panel-info">
+                <div class="panel-heading">
+                  <h2>Mathematical Tools</h2>
+                </div>
+                <div class="panel-body">
+                  <article>
+                    <ul>
+                      <li><a href="http://www.sagemath.org/">SageMath</a> - Open-Source Mathematical Software System</li>
+                      <li><a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica</a> - Modern Technical Computing</li>
+                      <li><a href="http://www.mathworks.com/products/matlab/">MATLAB</a>, <a href="https://www.gnu.org/software/octave/">GNU Octave</a>, and <a href="http://www.scilab.org/">Scilab</a></li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
+
+              <section id="id_web_dev" class="panel panel-info">
+                <div class="panel-heading">
+                  <h2>Web Development</h2>
+                </div>
+                <div class="panel-body">
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_html5">
+                    <h3>HTML/HTML5</h3>
+                    <h4>Some <a href="http://www.w3schools.com/">W3Schools</a> Items</h4>
+                    <ul>
+                      <li><a href="http://www.w3schools.com/html/html5_semantic_elements.asp">HTML5 Semantic Elements</a></li>
+                      <li><a href="http://www.w3schools.com/html/html_entities.asp">HTML Entities</a></li>
+                      <li><a href="http://www.w3schools.com/colors/colors_names.asp">HTML Color Names</a> and <a href="http://www.w3schools.com/colors/colors_picker.asp">HTML Color Picker</a></li>
+                    </ul>
+                    <p>Favicon generator: <a href="http://www.favicon-generator.de/?lang=en-US">favicon-generator.de</a></p>
+                    <p>Slogan genarator: <a href="https://www.shopify.com/tools/slogan-maker">Free slogan maker</a></p>
+                    <p>Joke generator: <a href="http://api.icndb.com/jokes/random">api.icndb.com/jokes/random</a></p>
+                    <p><a href="http://www.initializr.com/">Initializr</a> - start an HTML5 project in 15 seconds</p>
+                    <p><a href="https://jsfiddle.net/">JSFiddle</a> - create a new fiddle</p>
+                    <details>
+                      <summary>Udemy courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/htmlwebsite/">The Complete HTML & CSS Course - From Novice To Professional</a>" by <a href="https://www.udemy.com/user/shahzaibkamal/">Shahzaib Kamal</a> - 2 stars</li>
+                        <li>"<a href="https://www.udemy.com/lightroom5/learn/#/">HTML5 - Learn HTML 5 in 9 steps</a>" by <a href="https://www.udemy.com/user/ankitshrivastava7/">Ankit Shrivastava</a> - 1 star</li>
+                        <li>"<a href="https://www.udemy.com/learn-html-from-scratch/">Learn HTML Basics From Scratch</a>" by <a href="https://www.udemy.com/user/saadahmed20/">Mohammad Tahir Ahmed</a> - 0 star</li>
+                        <li>"<a href="https://www.udemy.com/learn-to-make-an-animated-image-gallery-using-html5/learn/#/">Learn to Make an Animated Image Gallery using HTML5</a>" by <a href="https://www.udemy.com/user/eduonix/">Eduonix Learning Solutions</a> - 2 stars</li>
+                        <li>"<a href="https://www.udemy.com/in-depth-web-development-from-scratch/learn/#/">In Depth Web Development Made Easy</a>" by <a href="https://www.udemy.com/user/tommymertell/">Tommy Mertell</a> - 1 star</li>
+                        <li>"<a href="https://www.udemy.com/become-exceptional-in-html-html5/">Become Exceptional in HTML and HTML5</a>" by <a href="https://www.udemy.com/user/debayansen2/">Debayan Sen</a> - 1 star</li>
+                      </ul>
+                    </details>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_bootstrap">
+                    <h3>Bootstrap</h3>
+                    <p>Main website: <a href="http://getbootstrap.com/">Bootstrap</a></p>
+                    <p>Helpers: <a href="http://lesscss.org/">Less</a> (B3) and <a href="http://sass-lang.com/">Sass</a> (B4)</p>
+                    <p>Grid system: xs &lt; 768px, sm &ge; 768px, md &ge; 992px, lg &ge; 1200px</p>
+                    <p>Bootstrap <a href="http://getbootstrap.com/css/#less-variables">Variables</a></p>
+                    <p><a href="https://angular-ui.github.io/bootstrap/">AngularUI</a> - Angular directives for Bootstrap</p>
+                    <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
+                    Stack Overflow:
+                    <ul>
+                      <li><a href="http://stackoverflow.com/questions/22785634/reset-fieldset-and-legend-behaviour-after-embeding-twitter-bootstrap">Reset fieldset and legend behaviour after embeding twitter bootstrap</a>
+                      </li>
+                      <li><a href="http://stackoverflow.com/questions/14205125/set-a-button-groups-width-to-100-and-make-buttons-equal-width">Set a button group's width to 100% and make buttons equal width?</a></li>
+                    </ul>
+                    <details>
+                      <summary>Udemy courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/create-single-page-website-using-twitter-bootstrap/">Create Single Page Website using Twitter Bootstrap 3</a>" by <a href="https://www.udemy.com/user/jeyakumaranmayooresan/">Jay Mayu</a> - 4 stars</li>
+                        <li>"<a href="https://www.udemy.com/twitter-bootstrap/">Twitter Bootstrap 2 for Beginners</a>" by <a href="https://www.udemy.com/user/marktrego/">Stone River eLearning</a> - 0 star</li>
+                        <li>"<a href="https://www.udemy.com/html-javascript-and-bootstrap-made-easy/">HTML, JavaScript and Bootstrap made easy!</a>" by <a href="https://www.udemy.com/user/amrswalha/">Amr Swalha</a> - 3 stars</li>
+                        <li>"<a href="https://www.udemy.com/learn-responsive-web-development-from-scratch/">Learn Responsive Web Development from Scratch</a>" (Parts A &amp; B) by <a href="https://www.udemy.com/user/eduonix/">Eduonix Learning Solutions</a> - 4 stars</li>
+                        <li>"<a href="https://www.udemy.com/learn-to-build-websites-using-twitter-bootstrap/">Learn to Build Websites using Twitter Bootstrap</a>" (Part B only) by <a href="https://www.udemy.com/user/eduonix/">Eduonix Learning Solutions</a> - 3 stars</li>
+                        <li>"<a href="https://www.udemy.com/bootstrap-4/">Bootstrap 4 Quick Start: Code Modern Responsive Websites</a>" by <a href="https://www.udemy.com/user/bradhussey/">Brad Hussey</a> - 4 stars</li>
+                      </ul>
+                    </details>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_javascript">
+                    <h3>JavaScript</h3>
+                    <p><q>JavaScript derives its syntax from <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>, its first-class functions from <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a>, and it prototype-based inheritance from <a href="https://en.wikipedia.org/wiki/Self_(programming_language)">Self</a>.</q></p>
+                    <p><q>JavaScript treats a line break as a semicolon if the next nonspace character cannot be interpreted as a continuation of the current statement</q>, with two exceptions.</p>
+                    <p>JavaScript represents numbers using the 64-bit IEEE 754 floating point format, with range from &plusmn;5 x 10<sup>-324</sup> to &plusmn;1.7976931348623157 x 10<sup>308</sup> and integers from -9,007,199,254,740,992 (-2<sup>53</sup>) to 9,007,199,254,740,992 (2<sup>53</sup>) with zero and negative zero, with a total enumeration of 18,437,736,874,454,810,627 numbers.</p>
+                    <p>The expression x != x is true if and only if x is NaN (isNaN(x) is true).</p>
+                    <p>A string is an immutable ordered sequence of 16-bit values encoded as UTF-16 of Unicode 3 characters.</p>
+                    <p><q>The following values convert to, and therefore work like, false: <b>undefined, null, 0, -0, NaN, &ldquo;&rdquo;</b>; all other values, including all object (and arrays) convert to, and work like, true.</q></p>
+                    <p><q>If you use var to declare the variable, the property that is created is nonconfigurable, which means that it cannot be deleted with the delete keyword.</q></p>
+                    <p><q>When a switch executes, it computes the value of expression and then looks for a case label whose expression evaluates to the same value (where sameness is determined by the === operator).</q> <q>The fact that the case expressions are evaluated at run-time makes the JavaScript switch statement much different from (and less efficient than) the switch statement of C, C++, and Java. In those languages, the case expressions must be compile-time constants of the same type, and switch statements can often compile down to highly efficient jump tables.</q></p>
+                    <h4>Books</h4>
+                    <ul>
+                      <li>"<a href="http://shop.oreilly.com/product/9780596805531.do">JavaScript: The Definitive Guide, 6th Edition</a>" by <a href="http://www.oreilly.com/pub/au/156">David Flanagan</a> - Apr 2011</li>
+                      <li>"<a href="http://www.amazon.com/JavaScript-Hours-Teach-Yourself-Edition/dp/067233738X">Sams Teach Yourself Java in 24 Hours, 6th Edition</a>" by <a href="http://www.informit.com/authors/bio/F0F91A58-7056-4644-9A94-1D80F1A9DC23">Phil Ballard</a> - Jun 2015</li>
+                      <li>"<a href="http://speakingjs.com/">Speaking JavaScript: An In-Depth Guide for Programmers</a>" by Dr. Axel Rauschmayer - free online</li>
+                    </ul>
+                    <h4>Some Free Plugins</h4>
+                    <ul>
+                      <li><a href="https://razorjack.net/quicksand/">Quicksand</a> - to reorder and filter items with a nice shuffling animation</li>
+                      <li><a href="http://fancybox.net/">Fancybox</a> - a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page</li>
+                    </ul>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_typescript">
+                    <h3>TypeScript</h3>
+                    <ul>
+                      <li><a href="http://www.typescriptlang.org/">Home Page</a></li>
+                      <li><a href="http://www.typescriptlang.org/Handbook">Handbook</a></li>
+                      <li><a href="https://github.com/Microsoft/TypeScript/wiki/Compiler-Options">Compiler Options</a></li>
+                      <li><a href="https://www.gitbook.com/book/basarat/typescript/details">TypeScript Deep Dive</a></li>
+                      <li><a href="http://gruntjs.com/">Grunt</a> and <a href="https://github.com/TypeStrong/grunt-ts">grunt-ts</a></li>
+                    </ul>
+                    Stack Overflow:
+                    <ul>
+                      <li><a href="http://stackoverflow.com/questions/12703266/how-to-handle-warnings-for-proprietary-custom-properties-of-built-in-objects-in">How to handle warnings for proprietary/custom properties of built-in objects in TypeScript</a></li>
+                      <li><a href="http://stackoverflow.com/questions/12799237/how-to-watch-and-compile-all-typescript-sources">How to watch and compile all TypeScript sources?</a> - but can make the computer to hang!</li>
+                      <li><a href="http://stackoverflow.com/questions/14345485/whats-the-difference-between-declare-class-and-interface-in-typescript">Whats the difference between “declare class” and “interface” in TypeScript</a></li>
+                    </ul>
+                    <details>
+                      <summary>Udemy courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/typescript/">Introduction to TypeScript</a>" by <a href="https://www.udemy.com/user/danielstern4/">Daniel Stern</a> - 5 stars</li>
+                      </ul>
+                    </details>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_mean_stack">
+                    <h3>MEAN Stack</h3>
+                    <ul>
+                      <li><a href="http://mean.io/">Home Page</a></li>
+                    </ul>
+                    <detailsa>
+                      <summary>Udemy courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/mongodb-essentials/">MongoDB Essentials - Understand the Basics of MongoDB</a>" by <a href="https://www.udemy.com/user/patrick251/">Patrick Schroeder</a> - 4 stars</li>
+                        <li>"<a href="https://www.udemy.com/expressjs-fundamentals/">ExpressJS Fundamentals</a>" by <a href="https://www.udemy.com/user/patrick251/">Patrick Schroeder</a> - 4 stars</li>
+                        <li>"<a href="https://www.udemy.com/learn-angular-js-for-beginners-lite/">Learn Angular JS for Beginners - Lite</a>" by <a href="https://www.udemy.com/user/edumobile-academy/">EDUmobile Academy</a> - 5 stars</li>
+                        <li>"<a href="https://www.udemy.com/maruti-angularjs/">Learn AngularJS Step By Step</a>" by <a href="https://www.udemy.com/user/marutimakwana/">Maruti Makwana</a> - 5 stars</li>
+                        <li>"<a href="https://www.udemy.com/angular-2-fundamentals/">Angular 2 Fundamentals</a>" by <a href="https://www.udemy.com/user/nick-kenens/">Nick Kenens</a> - 3 stars</li>
+                      </ul>
+                    </detailsa>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_editing">
+                    <h3>Editing</h3>
+
+                    <section id="id_brackets">
+                      <h4><a href="http://brackets.io/">Brackets</a> (<a href="https://github.com/adobe/brackets">GitHub</a>)</h4>
+                      <p>Editor by Adobe for (mainly) HTML, CSS, and JavaScript, and some other programming languages.</p>
+                      <p><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Brackets Key Bindings</a></p>
+                      <p><a href="https://github.com/adobe/brackets/wiki/User-Key-Bindings">User Key Bindings</a></p>
+                      <p>For CodeMirror command ID, this <a href="https://github.com/adobe/brackets/issues/11662">issue #11662</a> can be followed.</p>
+                      <details>
+                        <summary>Custom Key Bindings (including Emacs, Beautify, Emmet, and "Ctrl")</summary>
+                        <table class="table table-striped">
+                          <tr class="info">
+                            <th><a href="https://github.com/ahmadnazir/brackets-emacs/blob/master/main.js">Emacs Key Binding</a></th>
+                            <th><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Command ID</a></th>
+                            <th><a href="http://wttools.sourceforge.net/emacs-stuff/emacs-keybindings.html">Emacs Function</a></th>
+                            <th><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Original Command</a></th>
+                            <th><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Original Key Binding</a></th>
+                          </tr>
+
+                          <tr>
+                            <td>Alt-Shift-&lt;(,)</td>
+                            <td>goDocStart</td>
+                            <td>beginning-of-buffer</td>
+                            <td>com.notwebsafe.select-parent</td>
+                            <td>Ctrl-Home</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-Shift-&gt;(.)</td>
+                            <td>goDocEnd</td>
+                            <td>end-of-buffer</td>
+                            <td>com.notwebsafe.select-child</td>
+                            <td>Ctrl-End</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-Home</td>
+                            <td>goDocStart</td>
+                            <td>beginning-of-buffer</td>
+                            <td>goDocStart</td>
+                            <td>Ctrl-Home</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-End</td>
+                            <td>goDocEnd</td>
+                            <td>end-of-buffer</td>
+                            <td>goDocEnd</td>
+                            <td>Ctrl-End</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-a</td>
+                            <td>goLineStart</td>
+                            <td>beginning-of-line</td>
+                            <td>edit.selectAll</td>
+                            <td>Alt-Left</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-e</td>
+                            <td>goLineEnd</td>
+                            <td>end-of-line</td>
+                            <td>navigate.toggleQuickEdit</td>
+                            <td>Alt-Right</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-y</td>
+                            <td>edit.paste</td>
+                            <td>yank</td>
+                            <td>edit.redo</td>
+                            <td>Ctrl-v</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-y</td>
+                            <td>---</td>
+                            <td>yank-pop</td>
+                            <td>---</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-w</td>
+                            <td>edit.cut</td>
+                            <td>kill-region</td>
+                            <td>file.close</td>
+                            <td>Ctrl-x</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-w</td>
+                            <td>edit.copy</td>
+                            <td>copy-region-as-kill</td>
+                            <td>---</td>
+                            <td>Ctrl-c</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-k</td>
+                            <td>probertson.deleteToLineEnd</td>
+                            <td>kill-whole-line</td>
+                            <td>navigate.toggleQuickDocs</td>
+                            <td>Alt-Delete</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-f</td>
+                            <td>---</td>
+                            <td>forward-char</td>
+                            <td>edit.find</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-b</td>
+                            <td>---</td>
+                            <td>backward-char</td>
+                            <td>---</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-f</td>
+                            <td>goWordRight</td>
+                            <td>forward-word</td>
+                            <td>---</td>
+                            <td>Ctrl-Right</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-b</td>
+                            <td>goWordLeft</td>
+                            <td>backward-word</td>
+                            <td>---</td>
+                            <td>Ctrl-Left</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-n</td>
+                            <td>---</td>
+                            <td>next-line</td>
+                            <td>file.new</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-p</td>
+                            <td>---</td>
+                            <td>previous-line</td>
+                            <td>---</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-u</td>
+                            <td>convert_uppercase</td>
+                            <td>upcase-word</td>
+                            <td>redoSelection</td>
+                            <td>Ctrl-u (extension)</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-l</td>
+                            <td>convert_lowercase</td>
+                            <td>downcase-word</td>
+                            <td>---</td>
+                            <td>Ctrl-l</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-x Ctrl-f</td>
+                            <td>file.open</td>
+                            <td>find-file</td>
+                            <td>edit.cut edit.find</td>
+                            <td>Ctrl-o</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-x Ctrl-s</td>
+                            <td>file.save</td>
+                            <td>save-buffer</td>
+                            <td>edit.cut file.save</td>
+                            <td>Ctrl-s</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-x Ctrl-w</td>
+                            <td>file.saveAs</td>
+                            <td>write-file</td>
+                            <td>edit.cut file.close</td>
+                            <td>Ctrl-Shift-S</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-g</td>
+                            <td>---</td>
+                            <td>keyboard-quit</td>
+                            <td>navigate.gotoLine</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-/</td>
+                            <td>undo</td>
+                            <td>undo</td>
+                            <td>edit.lineComment</td>
+                            <td>Ctrl-z</td>
+                          </tr>
+                          <tr>
+                            <td>Alt-;</td>
+                            <td>edit.lineComment</td>
+                            <td>comment-dwim</td>
+                            <td>---</td>
+                            <td>Ctrl-/</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-s</td>
+                            <td>edit.find</td>
+                            <td>isearch-forward</td>
+                            <td>file.save</td>
+                            <td>Ctrl-f</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-r (after Ctrl-s)</td>
+                            <td>findPrev</td>
+                            <td>isearch-backward</td>
+                            <td>---</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-Space</td>
+                            <td>---</td>
+                            <td>set-mark-command</td>
+                            <td>edit.showCodeHints</td>
+                            <td>---</td>
+                          </tr>
+                          <tr class="info">
+                            <th><a href="https://github.com/brackets-beautify/brackets-beautify/blob/master/main.js">Beautify Key Binding</a></th>
+                            <th><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Command ID</a></th>
+                            <th><a href="https://github.com/brackets-beautify/brackets-beautify">Beautify Function</a></th>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-Shift-L</td>
+                            <td>---</td>
+                            <td>Beautify</td>
+                          </tr>
+                          <tr class="info">
+                            <th><a href="http://docs.emmet.io/actions/">Emmet Key Binding</a></th>
+                            <th><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Command ID</a></th>
+                            <th><a href="https://github.com/emmetio/emmet">Emmet Function</a></th>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-Shift-A</td>
+                            <td>---</td>
+                            <td>Wrap with Abbreviation</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-Shift-K</td>
+                            <td>---</td>
+                            <td>Remove Tag</td>
+                          </tr>
+                          <tr class="info">
+                            <th>"Ctrl" Key Binding</th>
+                            <th><a href="https://github.com/adobe/brackets/wiki/Brackets-Shortcuts">Command ID</a></th>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-a</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-b</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-c</td>
+                            <td>(Brackets) edit.copy</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-d</td>
+                            <td>(Brackets) edit.duplicate</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-e</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-f</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-g</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-h</td>
+                            <td>(Brackets) edit.replace</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-i</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-j</td>
+                            <td>(Brackets) navigate.jumptoDefinition</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-k</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-l</td>
+                            <td>(Brackets) Select Line</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-m</td>
+                            <td>---</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-n</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-o</td>
+                            <td>(Brackets) file.open</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-p</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-q</td>
+                            <td>(Brackets) file.quit</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-r</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-s</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-t</td>
+                            <td>(Brackets) navigate.gotoDefinition</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-u</td>
+                            <td>(Brackets) undoSelection</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-v</td>
+                            <td>(Brackets) edit.paste</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-w</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-x</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-y</td>
+                            <td>(Emacs)</td>
+                          </tr>
+                          <tr>
+                            <td>Ctrl-z</td>
+                            <td>(Brackets) undo</td>
+                          </tr>
+                        </table>
+                      </details>
+                      <br>
+                      <p><a href="https://brackets-registry.aboutweb.com/">Extensions</a> (plugins):</p>
+                      <ul>
+                        <li><a href="https://github.com/brackets-beautify/brackets-beautify">Beautify</a> by <a href="https://github.com/drewhamlett">Drew Hamlett</a></li>
+                        <li><a href="https://github.com/zaggino/brackets-git">Brackets Git</a> by <a href="https://github.com/zaggino">Martin Zagora</a></li>
+                        <li><a href="https://github.com/cfjedimaster/brackets-csslint">CSSLint</a> by <a href="https://github.com/cfjedimaster">Raymond Camden</a></li>
+                        <li><a href="https://github.com/thehogfather/brackets-custom-region-code-folding">Custom Region Code Folding</a> by <a href="https://github.com/thehogfather">Patrick Oladimeji</a></li>
+                        <li><a href="https://github.com/dnbard/brackets-documents-toolbar">Documents Toolbar</a> by <a href="https://github.com/dnbard">Alex Bardanov</a> (disabled)</li>
+                        <li><a href="https://github.com/ahmadnazir/brackets-emacs">Emacs keybindings</a> by <a href="https://github.com/ahmadnazir">Ahmad N. Raja</a> - but Ctrl-Y (yank) doesn't work</li>
+                        <li><a href="http://emmet.io/">Emmet</a> by <a href="https://github.com/sergeche">Sergey Chikuyonok</a></li>
+                        <li><a href="https://github.com/cfjedimaster/brackets-htmlhint">HTMLHint</a> by <a href="https://github.com/cfjedimaster">Raymond Camden</a></li>
+                        <li><a href="https://github.com/lkcampbell/brackets-indent-guides">Indent Guides</a> by <a href="https://github.com/lkcampbell">Lance Campbell</a></li>
+                        <li><a href="https://github.com/zorgzerg/brackets-minimap">Minimap</a> by <a href="https://github.com/zorgzerg">Senko Anton</a> (disabled)</li>
+                        <li><a href="https://github.com/cfjedimaster/brackets-w3cvalidation">W3CValidation</a> by <a href="https://github.com/cfjedimaster">Raymond Camden</a> (disabled)</li>
+                      </ul>
+
+                      <p>The code completion for JavaScript is accomplished using <a href="http://ternjs.net/">Tern</a>, whereas <a href="http://www.jslint.com/">JSLint</a> is already built-in in Brackets.</p>
+                      <details>
+                        <summary>Udemy courses:</summary>
+                        <ul>
+                          <li>"<a href="https://www.udemy.com/brackets/">Learn Brackets - The Open Source Text Editor</a>" by <a href="https://www.udemy.com/user/danielstern4/">Daniel Stern</a> - 5 stars</li>
+                        </ul>
+                      </details>
+                    </section>
+
+                    <section>
+                      <h4><a href="https://atom.io/">Atom</a> (<a href="https://github.com/atom/atom">GitHub</a>)</h4>
+                      <p>Atom is a desktop application by GitHub built with HTML, JavaScript, CSS, and Node.js integration.</p>
+                      <p><a href="https://atom.io/docs/latest/behind-atom-keymaps-in-depth">Atom Key Bindings</a></p>
+                      <p><a href="https://atom.io/packages">Packages</a>:</p>
+                      <ul>
+                        <li><a href="https://atom.io/packages/atom-beautify">atom-beautify</a> - but it destroys the "code folding"</li>
+                        <li><a href="https://atom.io/packages/atomic-emacs">atomic-emacs</a> - but Ctrl-Y (yank) doesn't work</li>
+                      </ul>
+                    </section>
+
+                    <section>
+                      <h4><a href="http://emmet.io/">Emmet</a></h4>
+                      <p><a href="http://docs.emmet.io/cheat-sheet/">Emmet Cheat Sheet</a></p>
+                      <details>
+                        <summary>Udemy courses:</summary>
+                        <ul>
+                          <li>"<a href="https://www.udemy.com/emmet-start-coding-html-and-css-fast-and-easy/">EMMET Faster HTML & CSS workflow - Best Tool For Developers</a>" by <a href="https://www.udemy.com/user/edwin166/">Edwin Diaz</a> - 5 stars</li>
+                          <li>"<a href="https://www.udemy.com/emmet-video-tutorials/">Faster HTML & CSS workflow with Emmet + Bootstrap</a>" by <a href="https://www.udemy.com/user/tahirtaous/">Mohammad Tahir</a> - 4 stars</li>
+                        </ul>
+                      </details>
+                    </section>
+
+                    <section>
+                      <h4><a href="https://www.gnu.org/software/emacs/">Emacs</a></h4>
+                      <p><a href="http://wttools.sourceforge.net/emacs-stuff/emacs-keybindings.html">Emacs Key Bindings</a></p>
+                    </section>
+
+                    <section>
+                      <h4><a href="https://www.google.com/fonts">Google Fonts</a></h4>
+                    </section>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_chrome_browser">
+                    <h3>Chrome Browser</h3>
+                    <h4>Extensions</h4>
+                    <ul>
+                      <li><a href="https://chrome.google.com/webstore/detail/simpleextmanager/kniehgiejgnnpgojkdhhjbgbllnfkfdk">SimpleExtManager</a> - a simple menu to enable, disable and access options of extensions</li>
+                      <li><a href="https://chrome.google.com/webstore/detail/session-manager/bbcnbpafconjjigibnhbfmmgdbbkcjfi">Session Manager</a> - lets you save sessions of your opened tabs and windows, and to quickly re-open them whenever you like</li>
+                      <li><a href="https://chrome.google.com/webstore/detail/cloudy-calculator/acgimceffoceigocablmjdpebeodphgc">Cloudy Calculator</a> - a shockingly versatile calculator for Chrome (formerly Chromey Calculator)</li>
+                      <li><a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm">WhatFont</a> - the easiest way to identify fonts on web pages</li>
+                      <li><a href="https://chrome.google.com/webstore/detail/google-art-project/akimgimeeoiognljlfchpbkpfbmeapkh">Google Art Project</a> - Art Project masterpieces from Google Cultural Institute in your browser tabs</li>
+                    </ul>
+
+                    <details>
+                      <summary>Udemy courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/2015-tech-chrome-tips-cool-features/">2015 Tech - Chrome tips &amp; cool features</a>" by <a href="https://www.udemy.com/user/tomlaheyh/">Tom Lahey</a> - 4 stars</li>
+                        <li>"<a href="https://www.udemy.com/2015-tech-chrome-extensions/">2015 Tech - Chrome Extensions</a>" by <a href="https://www.udemy.com/user/tomlaheyh/">Tom Lahey</a> - 4 stars</li>
+                      </ul>
+                    </details>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_domain_hosting">
+                    <h3>Domain and Hosting</h3>
+                    <h4>Useful Websites</h4>
+                    <ul>
+                      <li>Wikipedia: <a href="https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains">List of Internet top-level domains</a></li>
+                      <li><a href="http://www.panabee.com/">Panabee</a> - to get suggestions for domain names</li>
+                      <li><a href="https://who.is/">WHO.IS</a> - to check the owner of a domain</li>
+                      <li><a href="https://www.maxcdn.com/">MaxCDN</a> and <a href="https://www.cloudflare.com/">CloudFlare</a> - for CDN</li>
+                      <li><a href="http://www.webhostingtalk.com/">WebHostingTalk</a> - for reviews and coupons</li>
+                    </ul>
+                    <h4>Domain Websites</h4>
+                    <ul>
+                      <li><a href="http://www.freenom.com">Freenom</a> (free)</li>
+                      <li><a href="http://www.freedomain.co.nr/">freedomain.co.nr/</a> (free)</li>
+                      <li><a href="https://www.namecheap.com/">Namecheap</a> (probably cheapest)</li>
+                      <li><a href="https://domains.google.com/">Google Domains</a></li>
+                      <li><a href="https://www.godaddy.com/">GoDaddy</a></li>
+                      <li><a href="http://www.tucows.com/">Tucows</a></li>
+                      <li><a href="http://www.networksolutions.com/">Network Solutions</a> (probably expensive)</li>
+                    </ul>
+                    <h4>Hosting Websites</h4>
+                    <ul>
+                      <li><a href="https://x10hosting.com/">X10hosting</a> (free): unmetered disk space, 3 email accounts, 2 sub domains, 30 days login requirements, <a href="https://x10hosting.com/support/account/plans-upgrades-explained">plans</a></li>
+                      <li><a href="https://byet.host/">Byet.host</a> (free)</li>
+                      <li><a href="http://cpanel.hourb.com/">HourB</a> (free)</li>
+                      <li><a href="http://freehostingnoads.net/">Free Hosting No Ads</a> (free)</li>
+                      <li><a href="http://www.zymic.com/">Zymic</a> (free)</li>
+                      <li><a href="http://www.biz.nf/">Biz.nf</a> (free)</li>
+                      <li><a href="http://www.hostgator.com/">HostGator</a></li>
+                      <li><a href="https://www.bluehost.com/">Bluehost</a></li>
+                      <li><a href="https://www.siteground.com/">SiteGround</a></li>
+                      <li><a href="https://www.stablehost.com/">Stablehost</a></li>
+                      <li><a href="https://www.jaguarpc.com/">JaguarPC</a></li>
+                      <li><a href="https://www.vps.net/">Vps.net</a> (VPS hosting)</li>
+                      <li><a href="https://www.liquidweb.com/">Liquid Web</a> (dedicated hosting)</li>
+                    </ul>
+
+                    <details>
+                      <summary>Udemy courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/wordpress-install/">Install WordPress on Localhost: Free|Paid Domain + Hosting</a>" by <a href="https://www.udemy.com/user/54c4c63de3904/">Arun N</a> - 3 stars</li>
+                        <li>"<a href="https://www.udemy.com/how-to-buy-a-domain-and-hosting-for-newbies/">How -To Buy a Domain and Hosting For Newbies</a>" by <a href="https://www.udemy.com/user/tonybalthazar/">Tony Balthazar</a> - 3 stars</li>
+                        <li>"<a href="https://www.udemy.com/manage-a-hosted-website-quick-guide/">Manage a hosted website (Quick Guide)</a>" by <a href="https://www.udemy.com/user/muhammedtork/">Muhammed Torkey</a> - 3 stars</li>
+                      </ul>
+                    </details>
+                  </article>
+
+                  <!----------------------------------------------------------------------------------------------------------->
+
+                  <article id="id_git_hub">
+                    <h3>Git/GitHub</h3>
+                    <p><a href="http://gitref.org">Git Reference</a></p>
+                    <p><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Installing Git</a></p>
+                    <p><a href="https://git-for-windows.github.io/">git for windows</a> - can have "git" command from Windows Command Prompt</p>
+                    <p><a href="https://desktop.github.com/">GitHub Desktop</a> - the "git" command can only be run from "Git Shell"</p>
+                    <h4>Some Resources</h4>
+                    <ul>
+                      <li><a href="https://gist.github.com/metaraine/9924743">metaraine/git-essentials.sh</a></li>
+                      <li><a href="https://gist.github.com/metaraine/5128563">metaraine/cheatsheet-git.sh</a></li>
+                      <li><a href="http://pcottle.github.io/learnGitBranching/">Learn Git Branching</a></li>
+                      <li><a href="https://help.github.com/articles/fork-a-repo/">Fork A Repo</a></li>
+                    </ul>
+                    <details>
+                      <summary>Udemy Courses:</summary>
+                      <ul>
+                        <li>"<a href="https://www.udemy.com/refactoru-getting-started-as-a-web-developer/">Getting Started as a Web Developer</a>" by <a href="https://www.udemy.com/user/refactoru/">RefactorU LLC</a> - 4 stars</li>
+                        <li>"<a href="https://www.udemy.com/short-and-sweet-get-started-with-git-and-github-right-now/">Short and Sweet: Get Started with Git and GitHub Right Now</a>" by <a href="https://www.udemy.com/user/stephanielosi/">Stephanie Losi</a> - 3 stars</li>
+                        <li>"<a href="https://www.udemy.com/git-started-with-github/">Git Started with GitHub</a>" by <a href="https://www.udemy.com/user/jasontaylor22/">Jason Taylor</a> - 5 stars</li>
+                        <li>"<a href="https://www.udemy.com/git-bash/">Command Line Essentials: Git Bash for Windows</a>" by <a href="https://www.udemy.com/user/jasontaylor22/">Jason Taylor</a> - 4 stars</li>
+                      </ul>
+                    </details>
+                  </article>
+
+                </div>
+              </section>
+
+              <section id="id_web_midi" class="panel panel-info">
+                <div class="panel-heading">
+                  <h2>Web MIDI on Chrome</h2>
+                </div>
+                <div class="panel-body">
+                </div>
+              </section>
+
+              <section id="id_some_extras" class="panel panel-info">
+                <div class="panel-heading">
+                  <h2>Some Extras</h2>
+                </div>
+                <div class="panel-body">
+
+                  <article id="id_software_history">
+                    <h3>Software History</h3>
+                    <ul>
+                      <li>Older <a href="http://tensor.heliohost.org/wmidiac/">WMIDIAC</a> [Nov'15 - Dec'15] - with AngularJS1 and Bootstrap 3</li>
+                      <li>Oldest <a href="http://midi.heliohost.org/wmidi/">WMIDIAC</a> [Mar'15 - Aug'15] - with JavaScript; no jQuery</li>
+                      <li><a href="http://tensor.heliohost.org/tmidi/">TMIDI</a> Software [Feb'12 - Apr'12] - using Qt</li>
+                      <li><a href="http://midi.heliohost.org/tmidi/">TMIDI Website</a> [2012] - HTML and CSS only</li>
+                      <li>Oldest <a href="https://sites.google.com/site/netqst/">NetQuest Website</a> [2011] - with JavaScript</li>
+                      <li><a href="http://tensor.heliohost.org/rtensor/">RTensor Website</a> [2011] - C++ and Ruby</li>
+                      <li>Oldest <a href="https://sites.google.com/site/myxport/">Personal Website</a> [2011] - using Google tools</li>
+                    </ul>
+                  </article>
+
+                  <article id="id_android_apps">
+                    <h3>Android Apps</h3>
+                    <ul>
+                      <li><a href="http://www.pocketmeta.com/10-awesome-voice-audio-recording-apps-android-35332/">10 Awesome Voice and Audio Recording Apps for Android</a> - Jan 21, 2016</li>
+                      <li><a href="http://www.androidauthority.com/best-voice-recorder-apps-for-android-615332/">9 best voice recorder apps for Android</a> - Jun 9, 2015</li>
+                      <li><a href="http://www.makeuseof.com/tag/best-voice-recording-app-android/">What’s the Best Voice Recording App for Android?</a> - Mar 31, 2015</li>
+                      <li>Currently: <a href="https://play.google.com/store/apps/details?id=com.audioRec">AudioRec Voice Recorder</a> by Alex Circus</li>
+                    </ul>
+                  </article>
+
+                  <article>
+                    <h3>Anime for Grown-Ups</h3>
+                    <ol>
+                      <li><a href="https://en.wikipedia.org/wiki/Attack_on_Titan">Attack on Titan</a> (2009): <a href="https://kissanime.to/Anime/Shingeki-no-Kyojin-1080p">TV episodes</a> (25) and <a href="http://lmgtfy.com/?q=attack+on+titan+https%3A%2F%2Fkissanime.to%2FSearch%2FAnime&l=1">movies</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Berserk_(manga)">Berserk</a> (1997): <a href="https://kissanime.to/Anime/Berserk-Sub">TV episodes</a> (25) and <a href="http://lmgtfy.com/?q=berserk+site%3Akissanime.to%2FSearch%2FAnime&l=1">movies</a> (3)</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion">Neon Genesis Evangelion</a> (1995): <a href="https://kissanime.to/Anime/Neon-Genesis-Evangelion">TV episodes</a> (26) and <a href="http://lmgtfy.com/?q=evangelion+site%3Akissanime.to%2FSearch%2FAnime&l=1">movies</a> (5)</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Reign:_The_Conqueror">Reign: The Conqueror (Alexander Senki)</a> (2003): <a href="https://kissanime.to/Anime/Alexander-Senki-Sub">TV episodes</a> (13)</li>
+                    </ol>
+                  </article>
+
+                  <article>
+                    <h3>Some Devices</h3>
+                    <ol>
+                      <li><a href="http://www.projectorcentral.com/Sharp-XR-55X.htm">Sharp XR-55X Projector</a> (<a href="http://www.projectorcentral.com/pdf/projector_manual_5621.pdf">manual</a>) - 1024 x 768 4:3 (XGA), throw ratio: 1.70 - 2.06</li>
+                      <li><a href="http://www.dell.com/ae/business/p/dell-u2711/pd">Dell UltraSharp™ U2711 69 cm (27") Monitor</a> (<a href="http://www.manualmonitor.com/manuals/dell/DELL_U2711.pdf">manual</a>) - 2560 x 1440 (WQHD)</li>
+                      <li><a href="http://www.gearbest.com/tablet-pcs/pp_263284.html?ebay">Onda V919 Air 64GB ROM Tablet PC</a> - $149.69</li>
+                      <li><a href="http://support.logitech.com/en_us/product/internet-navigator-keyboard">Logitech Internet Navigator™ Keyboard</a></li>
+                      <li><a href="http://www.razerzone.com/gaming-keyboards-keypads/razer-blackwidow-tournament-edition">Razer BlackWidow Tournament Edition</a></li>
+                      <li><a href="http://www.netgear.com/home/products/networking/wifi-range-extenders/EX6200.aspx">NetGear EX6200: AC1200 WiFi Range Extender</a> - _admin_p_ www.mywifiext.net</li>
+                      <li><a href="http://www.ampedwireless.com/products/rec33a.html">Amped Wireless REC33A: High Power AC1750 Plug-In Wi-Fi Range Extender</a> - _n_n_ setup.ampedwireless.com</li>
+                      <li><a href="http://www.tp-link.com/en/products/details/cat-4581_TL-WA7510N.html">TP-Link TL-WA7510N: 5GHz 150Mbps Indoor/Outdoor Wireless Access Point</a> - _a_a_ 192.168.1.254</li>
+                    </ol>
+                  </article>
+
+                  <article>
+                    <h3>Some watches</h3>
+                    <ol>
+                      <li><a href="http://www.jomashop.com/citizen-watch-at9010-52e.html">Citizen Eco Drive Black Dial Stainless Steel: AT9010-52E</a> - $288.33 at Jomashop (retail $595)</li>
+                      <li><a href="http://www.ashford.com/us/watches/hamilton/H64554131.pid?source=406555555">Hamilton Khaki Aviation Flight Timer Quartz: H64554131</a> - $598.00 at Ashford (retail $1,495)</li>
+                      <li><a href="http://www.jomashop.com/tissot-watch-t0914204405100.html">Tissot T-Touch Expert Solar Black Dial Titanium: T0914204405100</a> - $778.71 at Jomashop (retail $1,250)</li>
+                    </ol>
+                  </article>
+
+                </div>
+              </section>
+
+            </main>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--#######################################################################################################################-->
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Copyright &copy; 2016 NetQuest, LLC All Rights Reserved</p>
+      <p>
+        *** Last modified at
+        <script>
+          document.write(document.lastModified)
+        </script>
+        ***
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
+<!------- end of file ------->

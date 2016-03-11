@@ -1,0 +1,54 @@
+/******* start of file *******/
+
+aside {
+  margin-bottom: 5px;
+}
+
+aside ul {
+  padding-left: 15px;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(img/SocialNetwork-0-00-13-25.jpg);
+  background-size: cover;
+}
+
+h3 {
+  color: brown;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.brand-net {
+  color: orange;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.brand-quest {
+  color: brown;
+}
+
+.navbar-brand .brand-net {
+  font-size: 30px;
+}
+
+.navbar-brand .brand-quest {
+  font-size: 30px;
+}
+
+.navbar-right {
+  padding-right: 30px;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+}
+
+
+/******* end of file *******/
